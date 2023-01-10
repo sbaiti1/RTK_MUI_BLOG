@@ -7,9 +7,9 @@ export default function Blog(props){
         <>
             <Card style={{boxShadow : "none"}} sx={{maxWidth : 650}}>
                 
-                    <Typography   variant="h6" style={{color : "#94a3b8" , margin : "10px 5px"}} > {props.date} </Typography>
+                    <Typography   variant="h6" style={{color : "#94a3b8" , margin : "10px 5px" , fontSize : "17px"}} > {props.date} </Typography>
                     <Typography gutterBottom variant="h4" component="div"> {props.title}  </Typography>
-                    <CardMedia component='img' height="280" image={props.img} />
+                    <CardMedia component='img' style={{borderRadius : "5px"}} height="280" image={props.img} />
             </Card>
         </>
     )

@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import data from '../../data'
 
 export const blogSlice = createSlice({
     name : 'blog' , 
-    initialState : {allBlogs : []} , 
+    initialState : {allBlogs : data} , 
     reducers : {
         add : {} , 
         del : {}
