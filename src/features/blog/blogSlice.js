@@ -5,7 +5,7 @@ export const blogSlice = createSlice({
     name : 'blog' , 
     initialState : {allBlogs : data} , 
     reducers : {
-        add : {} , 
+        add : (state , action)=>{state.allBlogs.push(action.payload)} , 
         del : {}
     }
 })
